@@ -1,0 +1,35 @@
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  color:black
+}
+.header {
+  border-bottom: 1px solid rgb(99, 97, 175);
+  padding: .5em 1em;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(115, 115, 213);
+}
+
+.site-identity a {
+  font-size: 1.5em;
+  margin: .6em 0;
+  display: inline-block;
+  color: white;
+
+}
+
+.nav ul,
+.nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+

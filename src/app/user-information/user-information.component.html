@@ -1,0 +1,40 @@
+<header class="header">
+  <nav class="nav">
+    <ul class="nav">
+      <li><a >User Information</a></li>
+      <li><a>About Us</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </nav>
+  <div class="site-identity">
+    <a>{{todaysDate}}</a>
+  </div>
+</header>
+<div class="container">
+    <div class="container">
+      <h5>User Information</h5>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th >Name</th>
+            <th >UserName</th>
+            <th >Email</th>
+            <th >Address</th>
+            <th >Number</th>
+            <th >Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row  of  userInformation">
+            <td>{{row?.name}}</td>
+            <td>{{row?.username}}</td>
+            <td>{{row?.email}}</td>
+            <td>{{row?.address?.street}}, {{row?.address?.suite }}, {{row?.address?.city }},
+              {{row?.address?.zipcode }},{{row?.address?.geo?.lat }}, {{row?.address?.geo?.lng }}</td>
+            <td>{{row?.phone}}</td>
+            <td>{{row?.company?.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
