@@ -8,7 +8,7 @@ Project is about showing user Information
   4) Go to your project directory cd userInformation
   5) To open your application run command - ng serve --open --port 4200
   
-#Building the application
+# Building the application
   1) Run this command to build the application - ng build
 
 # How to run the Application locally
